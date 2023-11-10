@@ -7,6 +7,13 @@ import { ProvaComponent } from './prova/prova.component';
 import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {Component} from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+
+
+
 
 @NgModule({
   declarations: [
@@ -18,9 +25,17 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule { } 
+
+
+
+
+
