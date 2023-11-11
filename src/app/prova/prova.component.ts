@@ -8,16 +8,23 @@ import { Component,  OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentC
   styleUrl: './prova.component.css',
 })
 export class ProvaComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit{
-   cane = {
-    nome: "walter",
-    specie: "chiuaua nano",
-    pelo: "corto",
-    colore: "viola"
-   }
+   immagine = ''
+   immagine1 = 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=226749&type=card'
+   immagine2 = 'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=226755&type=card'
   
    constructor(){}
    ngOnInit() {
-       console.log("ngOnInit")
+       let counter = 0
+       setInterval(()=>{
+        if(counter%2 === 0){
+           this.immagine = this.immagine1
+           console.log("Delver non è flippato")
+        } else{
+            this.immagine = this.immagine2
+            console.log("Delver è flippato")
+        }
+        counter++
+       }, 2000)
    }
    ngOnChanges() {
        console.log("ngOnChanges")
