@@ -8,7 +8,14 @@ import { Component,  OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentC
   styleUrl: './prova.component.css',
 })
 export class ProvaComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit{
-  constructor(){}
+   cane = {
+    nome: "walter",
+    specie: "chiuaua nano",
+    pelo: "corto",
+    colore: "viola"
+   }
+  
+   constructor(){}
    ngOnInit() {
        console.log("ngOnInit")
    }
