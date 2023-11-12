@@ -10,6 +10,7 @@ import { Component,  OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentC
 })
 export class ProvaComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit{
    constructor(){}
+   title = "cibo"
    ngOnInit() {
        console.log("ngOnInit")
    }
@@ -32,7 +33,10 @@ export class ProvaComponent implements OnInit, OnChanges, DoCheck, AfterContentI
     console.log("ngAfterViewChecked")
    }  
    onInput(event: Event){
-    console.log( (<HTMLInputElement>event.target).value)
+    this.title = (<HTMLInputElement>event.target).value
+   }
+   onClick(event: Event){
+    this.title = "pizza"
    }
 }
 

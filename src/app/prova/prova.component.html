@@ -1,9 +1,14 @@
 
-  <mat-form-field class="example-full-width">
+ 
+
+<button mat-icon-button color="warn" aria-label="Example icon button with a heart icon" (click)="onClick($event)">
+      <mat-icon>favorite</mat-icon>
+    </button>
+
+
+ <mat-form-field class="example-full-width">
     <mat-label>Favorite food</mat-label>
-    <input matInput placeholder="Ex. Pizza" (input)="onInput($event)">
+    <input matInput placeholder="Ex. Pizza" [(ngModel)]="title">
+    <p>{{title}}</p>
+    
   </mat-form-field>
-
-
-
-
