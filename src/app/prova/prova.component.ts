@@ -38,6 +38,7 @@ export class ProvaComponent implements OnInit, OnChanges, DoCheck, AfterContentI
    onClick(event: Event){
     this.title = "pizza"
    }
+   isVisible = true
 }
 
 

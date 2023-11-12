@@ -10,5 +10,12 @@
     <mat-label>Favorite food</mat-label>
     <input matInput placeholder="Ex. Pizza" [(ngModel)]="title">
     <p>{{title}}</p>
-    
   </mat-form-field>
+  <ng-template *ngIf="isVisible; then blocco1; else blocco2"></ng-template>
+  <ng-template #blocco1>
+    sono visibile
+  </ng-template>
+  <ng-template #blocco2>
+    non sono visibile 
+  </ng-template>
+  
