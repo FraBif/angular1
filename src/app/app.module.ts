@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProvaComponent } from './prova/prova.component';
-import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
@@ -14,6 +13,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -21,8 +21,7 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    ProvaComponent,
-    MainComponent
+    ProvaComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatDividerModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,21 +1,13 @@
 
- 
-
-<button mat-icon-button color="warn" aria-label="Example icon button with a heart icon" (click)="onClick($event)">
-      <mat-icon>favorite</mat-icon>
-    </button>
-
-
- <mat-form-field class="example-full-width">
-    <mat-label>Favorite food</mat-label>
-    <input matInput placeholder="Ex. Pizza" [(ngModel)]="title">
-    <p>{{title}}</p>
-  </mat-form-field>
-  <ng-template *ngIf="isVisible; then blocco1; else blocco2"></ng-template>
-  <ng-template #blocco1>
-    sono visibile
-  </ng-template>
-  <ng-template #blocco2>
-    non sono visibile 
-  </ng-template>
+<mat-card class="example-card" *ngFor="let calciatore of calciatori">
+  <mat-card-header>
+    <p>{{calciatore.nome}} <strong>{{calciatore.cognome}}</strong></p>
+  </mat-card-header>
+  <img mat-card-image src="{{calciatore.immagine}}" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p id="mycontent">
+      {{calciatore.descrizione}}
+    </p>
+  </mat-card-content>
+</mat-card>
   
