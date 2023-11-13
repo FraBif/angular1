@@ -8,6 +8,8 @@
     <p id="mycontent">
       {{calciatore.descrizione}}
     </p>
+    <span><strong>Allena attualmente:</strong></span>
+      <div class="active" [ngStyle]="{'background': calciatore.isTrainer ? 'green' : 'red' }"></div>
   </mat-card-content>
 </mat-card>
   

@@ -5,7 +5,12 @@
 p{
     font-size: large;
 }
-
+.active{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: red;
+ }
 
 img{
     border-top: 3px solid black;
