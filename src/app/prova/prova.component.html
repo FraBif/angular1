@@ -9,7 +9,9 @@
       {{calciatore.descrizione}}
     </p>
     <span><strong>Allena attualmente:</strong></span>
-      <div class="active" [ngStyle]="{'background': calciatore.isTrainer ? 'green' : 'red' }"></div>
+      <div  [ngClass]="calciatore.isTrainer ? 'cerchio-verde' : 'cerchio-rosso'">
+        {{calciatore.index}}
+      </div>
   </mat-card-content>
 </mat-card>
   
