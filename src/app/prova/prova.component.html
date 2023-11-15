@@ -1,9 +1,9 @@
 
-<mat-card class="example-card" *ngFor="let calciatore of calciatori">
+<mat-card class="example-card" *ngFor="let calciatore of calciatori.calciatori">
   <mat-card-header>
     <p>{{calciatore.nome}} <strong>{{calciatore.cognome}}</strong></p>
   </mat-card-header>
-  <img mat-card-image src="{{calciatore.immagine}}" alt="Photo of a Shiba Inu">
+  <img mat-card-image src="{{calciatore.immagine}}" alt="Immagine calciatore">
   <mat-card-content>
     <p id="mycontent">
       {{calciatore.descrizione}}
